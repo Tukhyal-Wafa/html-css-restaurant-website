@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+/* Header & Nav */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1px 5%;
+  z-index: 1000;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.603
+  ); /* Added slight color so it's readable over images */
+}
+
+.name img {
+  height: 80px; /* Adjusted to keep header slim */
+  width: auto;
+}
+
+.unordered-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.unordered-list a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  margin-right: 50px;
+}
+
+/* front Section */
+.front-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 10% 80px 10%;
+  min-height: 80vh;
+}
+
+.front-left {
+  flex: 1;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.brand-name {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  opacity: 0.5;
+  margin-bottom: 80px;
+}
+
+/* THE DOTTED LINE */
+.vertical-dotted-line {
+  height: 300px;
+  border-left: 2px dotted #b5a48d;
+  margin: 0 10px;
+}
+
+.front-right {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.image-dish img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+}
+
+.btn-main {
+  background: #ff9500; /* Changed to match dotted line for better aesthetic */
+  color: #000;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Menu Section */
+.menu-front {
+  padding: 100px 10%;
+  background-color: #000;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #ff9500; /* Gold/Orange accent */
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.blink-offer {
+  color: #ff4500;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-left: 8px;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.menu-container {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ffffff;
+}
+
+.menu-table th {
+  text-align: left;
+  padding: 20px;
+  border-bottom: 2px solid #ff9500;
+  font-size: 1.3rem;
+  color: #ff9500;
+}
+
+.menu-table td {
+  padding: 25px 20px;
+  border-bottom: 1px solid rgba(181, 164, 141, 0.2); /* Faint divider */
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Styling Dish Names */
+.menu-table td:first-child {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+  width: 30%;
+}
+
+/* Styling  Descriptions */
+.menu-table td:nth-child(2) {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #ccc;
+  width: 55%;
+}
+
+/* Styling Price */
+.menu-table td:last-child {
+  font-weight: bold;
+  color: #ff9500;
+  text-align: right;
+  width: 15%;
+}
+
+/* Hover Effect  */
+.menu-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.164);
+  transition: background 0.4s ease;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 10% 80px 10%;
+  min-height: 80vh;
+}
+
+.about-left {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.image-interior img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+.about-right {
+  flex: 1;
+  padding-left: 10px;
+  text-align: left;
+}
+.description {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 80px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 100px 10%;
+  background-color: #000;
+  text-align: center;
+}
+.contact-logo {
+  height: 250px;
+  width: auto;
+  margin-bottom: 0px;
+}
+.contact-title {
+  font-size: 2.5rem;
+  color: #ff9500;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.contact-info {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.contact-info a {
+  color: #ff9500;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+  color: aqua;
+  transition-duration: 0.3s ease;
+}
+
+/* Footer */
+.footer-section {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10%;
+  font-size: 0.9rem;
+}
+.footer-section a {
+  color: #ff9500a4;
+  text-decoration: none;
+  font-weight: bold;
+}
